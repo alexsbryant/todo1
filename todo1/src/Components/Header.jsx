@@ -2,7 +2,9 @@ import React from 'react';
 
 function Header() {
   return (
-    <header>Test Text :)</header>
+    <header>
+      <h1>You have # open tasks.</h1>
+    </header>
   )
 }
 
