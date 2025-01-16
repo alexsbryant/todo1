@@ -5,7 +5,7 @@ function TodoInput() {
     <div className="input-container">
       <input placeholder="Add task" />
       <button>
-        
+      <i className="fa-regular fa-square-plus"></i>
       </button>
     </div>
   )
