@@ -13,9 +13,9 @@ function App() {
     { input: 'Wash the car', complete: true }
   ] */
 
-  const [todos, setTodos] = useState([
-    { input: 'Hello! Add your first todo!', complete: false }
-  ]);
+  const defaultTodo = [{ input: 'Hello! Add your first todo!', complete: false }]
+
+  const [todos, setTodos] = useState(defaultTodo);
 
   const [selectedTab, setSelectedTab] = useState('Open');
 
@@ -49,9 +49,7 @@ function App() {
 
   function handleReset() {
     const userConfirmed = window.confirm("Are you sure you want to reset?");
-    if (userConfirmed) {    setTodos([
-      { input: 'Hello! Add your first todo!', complete: false }
-    ])
+    if (userConfirmed) {    setTodos(defaultTodo)
     alert("Todos have been reset!");
     } else {
       alert("Reset cancelled.");
