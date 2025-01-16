@@ -1,9 +1,8 @@
 import React from 'react';
 
 function TodoCard(props) {
-  const { todoIndex, todos } = props;
-
-  const todo = todos[todoIndex];
+  const { todo } = props;
+  
   console.log(todo);
 
   return (
