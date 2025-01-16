@@ -1,7 +1,7 @@
 import React from 'react';
 
 function TodoCard(props) {
-  const { todo, handleDeleteTodo, todoIndex } = props;
+  const { todo, handleDeleteTodo, todoIndex, handleCompleteTodo } = props;
   
   console.log(todo);
 
@@ -9,7 +9,10 @@ function TodoCard(props) {
     <div className="card todo-item">
       <p>{todo.input}</p>
       <div className="todo-buttons">
-        <button disabled={todo.complete}>
+        <button onClick={() =>{
+          handleCompleteTodo(todoIndex)
+        }}
+          disabled={todo.complete}>
           <h6>Done</h6>
         </button>
         <button onClick={() => {
