@@ -1,11 +1,15 @@
 import React from 'react';
 import TodoCard from './TodoCard';
 
-function ToDoList() {
+function ToDoList(props) {
+  const { todos } = props;
+
+  const tab = 'All';
+
   return (
-    <div>
-      <TodoCard />
-    </div>
+    <>
+      
+    </>
   )
 }
 
