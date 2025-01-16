@@ -52,9 +52,9 @@ function App() {
     if (userConfirmed) {    setTodos([
       { input: 'Hello! Add your first todo!', complete: false }
     ])
-    alert("Todos have been reset!")
+    alert("Todos have been reset!");
     } else {
-      alert("Reset cancelled.")
+      alert("Reset cancelled.");
     }
   };
 

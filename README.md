@@ -1,5 +1,8 @@
 A simple Todo App, using React and some external styling with Google Fonts and Awesome Fonts. 
 
+Site hosted at:
+
+https://alex-todo-test-app.netlify.app/
 
 
 # React + Vite
