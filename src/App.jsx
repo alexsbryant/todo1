@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import Tabs from "./Components/Tabs";
 import TodoInput from "./Components/TodoInput";
-import ToDoList from "./Components/ToDoList";
+import ToDoList from "./Components/TodoList";
 
 function App() {
 /*   const todos = [
