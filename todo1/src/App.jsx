@@ -16,8 +16,9 @@ function App() {
     { input: 'Hello! Add your first todo!', complete: true }
   ]);
 
-  function handleAddTodo() {
-    
+  function handleAddTodo(newTodo) {
+    const newTodoList = [...todos, { input: newTodo, complete: false }];
+    setTodos(newTodoList);
   };
 
   function handleEditTodo() {
