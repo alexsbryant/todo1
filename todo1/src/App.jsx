@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Components/Header";
 import Tabs from "./Components/Tabs";
 import TodoInput from "./Components/TodoInput";
@@ -38,6 +38,18 @@ function App() {
     setTodos(newTodoList)
   };
 
+  function handleSaveData(currentTodos) {
+    localStorage.setItem('todo1-app', JSON.stringify({ todos: 
+    currentTodos }))
+  };
+
+  useEffect(() => {
+    if (!localStorage || !localStorage.getItem('todo1-app')) { return };
+    console.log('here');
+    let db = JSON.parse(localStorage.getItem('todo1-app'));
+    setTodos(db.todos);
+    }, []);
+
   return (
     <>
       <Header todos={todos} />
@@ -55,6 +67,6 @@ function App() {
       <TodoInput handleAddTodo={handleAddTodo} />
     </>
   )
-}
+};
 
-export default App
+export default App;

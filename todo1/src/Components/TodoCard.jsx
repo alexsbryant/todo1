@@ -3,7 +3,7 @@ import React from 'react';
 function TodoCard(props) {
   const { todo, handleDeleteTodo, todoIndex, handleCompleteTodo } = props;
   
-  console.log(todo);
+/*   console.log(todo); */
 
   return (
     <div className="card todo-item">

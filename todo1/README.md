@@ -1,3 +1,7 @@
+A simple Todo App, using React and some external styling with Google Fonts and Awesome Fonts. 
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
