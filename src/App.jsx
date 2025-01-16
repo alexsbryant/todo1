@@ -3,6 +3,7 @@ import Header from "./Components/Header";
 import Tabs from "./Components/Tabs";
 import TodoInput from "./Components/TodoInput";
 import ToDoList from "./Components/TodoList";
+import Reset from "./Components/Reset";
 
 function App() {
 /*   const todos = [
@@ -46,6 +47,12 @@ function App() {
     currentTodos }))
   };
 
+  function handleReset() {
+    setTodos([
+      { input: 'Hello! Add your first todo!', complete: false }
+    ])
+  };
+
   useEffect(() => {
     if (!localStorage || !localStorage.getItem('todo1-app')) { return };
 /*     console.log('here'); */
@@ -68,6 +75,7 @@ function App() {
         todos={todos} 
       />
       <TodoInput handleAddTodo={handleAddTodo} />
+      <Reset handleReset={handleReset} />
     </>
   )
 };
