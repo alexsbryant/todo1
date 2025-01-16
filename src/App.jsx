@@ -48,9 +48,14 @@ function App() {
   };
 
   function handleReset() {
-    setTodos([
+    const userConfirmed = window.confirm("Are you sure you want to reset?");
+    if (userConfirmed) {    setTodos([
       { input: 'Hello! Add your first todo!', complete: false }
     ])
+    alert("Todos have been reset!")
+    } else {
+      alert("Reset cancelled.")
+    }
   };
 
   useEffect(() => {
