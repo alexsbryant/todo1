@@ -16,7 +16,8 @@ function ToDoList(props) {
         return (
           <TodoCard 
             key={todoIndex} 
-            todoIndex={todoIndex} 
+            todoIndex={todoIndex}
+            {...props}
             todo={todo} 
           />
         )
